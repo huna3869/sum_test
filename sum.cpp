@@ -1,10 +1,11 @@
 int sum(int n)
 {
 	int res = 0;
-	for(int i=1; i<=n; i++)
-	{
-		res+=i;
-	}
+	int s = n/2;
+	if(n%2 == 1)
+		res = (n+1)*s + (n+1)/2;
+	else
+		res = (n+1)*s;
 
 	return res;
 }
